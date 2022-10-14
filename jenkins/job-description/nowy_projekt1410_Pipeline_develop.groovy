@@ -7,7 +7,7 @@ def job_config = [
                 name: "nowy_projekt1410_Pipeline_develop"
         ],
         git: [
-                branch: "develop"
+                branch: "feature-1665743603564"
         ]
 ]
 
@@ -54,7 +54,7 @@ pipeline {
             steps {
                 echo "checkout"
                 script {
-                    jslGit.checkout( config, "JEQP", "nowy_projekt1410_Pipeline_develop", "develop")
+                    jslGit.checkout( config, "JEQP", "nowy_projekt1410_Pipeline_develop", "feature-1665743603564")
                 }
             }    
         }
